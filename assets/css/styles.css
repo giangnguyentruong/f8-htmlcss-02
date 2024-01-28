@@ -22,7 +22,7 @@ body {
 }
 
 /* Common */
-.content {
+.main-content {
     width: 1170px;
     max-width: calc(100% - 48px);
     margin-left: auto;
@@ -273,7 +273,7 @@ a {
 
 /* Popular */
 .popular {
-    padding-top: 200px;
+    margin-top: 200px;
 }
 
 .popular .popular-top {
@@ -387,4 +387,70 @@ a {
 
 .popular .course-list .book-btn {
     border: none;
+}
+
+/* Feedback */
+.feedback {
+    margin-top: 200px;
+    padding: 96px 0;
+    background: #2e2100;
+}
+
+.feedback-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .info .title {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    line-height: 1.41; /* 141.667% */
+    font-weight: 700;
+}
+
+.feedback-item .info .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    line-height: 1.85; /* 185.714% */
+    font-weight: 400;
+}
+
+.feedback-item .dots {
+    display: flex;
+    margin-top: 28px;
+}
+
+.feedback-item .dot {
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #634700;
+}
+
+.feedback-item .dot:hover {
+    background: #fea31b;
+    cursor: pointer;
+}
+
+.feedback-item .content {
+    width: 63%;
+}
+
+.feedback-item .content blockquote {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.53;
 }
